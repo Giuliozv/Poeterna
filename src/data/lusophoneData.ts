@@ -812,11 +812,11 @@ export const ANTHOLOGIES: Anthology[] = [
   {
     id: 'modernismo-lusofono',
     title: 'Modernismo & Vanguardas',
-    subtitle: 'As revoluções estéticas de Orpheu e da Semana de 22',
-    description: 'Fernando Pessoa, Drummond, Cecília Meireles e a inovação radical dos ritmos e reflexões existenciais.',
+    subtitle: 'As revoluções estéticas de Orpheu, da Semana de 22 e das Vanguardas Universais',
+    description: 'Fernando Pessoa, Drummond, Maiakovski, Cecília Meireles e a inovação radical dos ritmos, do verso livre e das reflexões existenciais.',
     iconName: 'auto_stories',
     color: '#5d4e37',
-    poemIds: ['mar-portugues', 'no-meio-do-caminho', 'motivo']
+    poemIds: ['mar-portugues', 'maiakovski-a-nuvem-de-calcas', 'maiakovski-escutem-ouvir-estrelas', 'no-meio-do-caminho', 'motivo']
   }
 ];
 
@@ -912,5 +912,13 @@ export const POETRY_QUOTES = [
   {
     quote: "Não nos esquecemos do mar, porque trazemos o mar gravado na própria respiração.",
     author: "Corsino Fortes"
+  },
+  {
+    quote: "A poesia é uma viagem ao desconhecido: para uma única palavra gastam-se milhares de toneladas de matéria-prima verbal.",
+    author: "Vladimir Maiakovski"
+  },
+  {
+    quote: "Se as estrelas se acendem, quer dizer que alguém precisa delas — que ao menos uma estrela sobre todos os tetos se acenda!",
+    author: "Vladimir Maiakovski"
   }
 ];

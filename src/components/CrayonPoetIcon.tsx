@@ -95,6 +95,9 @@ export const CrayonPoetIcon: React.FC<CrayonPoetIconProps> = ({
     } else if (norm.includes('neruda') || norm.includes('mistral')) {
       resolvedCountry = 'CL';
       resolvedCountryName = 'Chile';
+    } else if (norm.includes('maiakovski') || norm.includes('mayakovsky') || norm.includes('pushkin') || norm.includes('blok') || norm.includes('brodsky') || norm.includes('akhmatova') || norm.includes('pasternak')) {
+      resolvedCountry = 'RU';
+      resolvedCountryName = 'Rússia';
     } else {
       resolvedCountry = 'UNIVERSAL';
       resolvedCountryName = 'Universal';
@@ -376,6 +379,19 @@ export const CrayonPoetIcon: React.FC<CrayonPoetIconProps> = ({
             <rect x="6" y="38" width="48" height="30" fill="#D52B1E" />
             <rect x="6" y="10" width="20" height="28" fill="#0039A6" />
             <polygon points="16,19 17,22 20,22 17.5,24 18.5,27 16,25 13.5,27 14.5,24 12,22 15,22" fill="#FFFFFF" />
+          </g>
+        );
+
+      // 19. RÚSSIA (RU) (Tricolor Branco, Azul e Vermelho com Emblema Lírico Dourado)
+      case 'RU':
+        return (
+          <g>
+            <rect x="6" y="10" width="48" height="19" fill="#FFFFFF" />
+            <rect x="6" y="29" width="48" height="19" fill="#0039A6" />
+            <rect x="6" y="48" width="48" height="20" fill="#D52B1E" />
+            {/* Emblema Dourado da Lírica Eslava */}
+            <circle cx="30" cy="38.5" r="5.5" fill="none" stroke="#FFD700" strokeWidth="1" />
+            <polygon points="30,34 31.5,37.5 35,38.5 32,40.5 33,44 30,42 27,44 28,40.5 25,38.5 28.5,37.5" fill="#FFD700" />
           </g>
         );
 

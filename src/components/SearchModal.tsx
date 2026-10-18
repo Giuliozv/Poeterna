@@ -72,7 +72,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               Pesquisas Recomendadas
             </span>
             <div className="flex flex-wrap gap-2">
-              {['Fernando Pessoa', 'Baudelaire', 'García Lorca', 'Pablo Neruda', 'Rumi', 'Kaváfis', 'Drummond', 'Camões', 'Walt Whitman'].map(
+              {['Fernando Pessoa', 'Vladimir Maiakovski', 'Baudelaire', 'García Lorca', 'Pablo Neruda', 'Rumi', 'Kaváfis', 'Drummond', 'Camões', 'Walt Whitman'].map(
                 (chip) => (
                   <button
                     key={chip}
