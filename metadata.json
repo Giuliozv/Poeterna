@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Lira Lusófona",
+  "description": "Plataforma de Poesia e Literatura Lusófona e Universal com antologias, grandes poetas mundiais e poemas interativos. Multimídias® 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

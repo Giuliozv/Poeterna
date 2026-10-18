@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-illumination: #f4e9cd;
+    --bg-parchment-card: #faf2db;
+    --bg-parchment-surface: #f7eed4;
+    --text-gall-ink: #1f1a14;
+    --gold-leaf: #d97706;
+    --antique-brass: #b45309;
+    --lapis-lazuli: #1e3a8a;
+  }
+
+  body {
+    font-family: 'Newsreader', serif;
+    background-color: #f4e9cd;
+    color: #1f1a14;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-headline, .font-display, .font-syne, .font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: -0.01em;
+}
+
+.font-body, .font-serif {
+  font-family: 'Newsreader', serif;
+}
+
+.font-mono, .font-label, .font-jetbrains {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.serif-poem {
+  font-family: 'Newsreader', serif;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.65;
+  color: #5a401c;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: currentColor;
+}
+
+.btn {
+  background: #1f1a14;
+  color: #faf2db;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid #785223;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 2px rgba(31, 26, 20, 0.15);
+}
+
+.btn:hover {
+  background: #1e3a8a;
+  color: #ffffff;
+  border-color: #1e3a8a;
+  box-shadow: 0 2px 4px rgba(30, 58, 138, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #1f1a14;
+  border: 1px solid #6b4a20;
+  padding: 0.75rem 1.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-outline:hover {
+  border-color: #1e3a8a;
+  color: #1e3a8a;
+  background: rgba(30, 58, 138, 0.05);
+}
+
+.dot-grid-pattern {
+  background-image: radial-gradient(rgba(146, 100, 30, 0.14) 0.8px, transparent 0);
+  background-size: 28px 28px;
+  background-position: center;
+}
+
+.card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  border-color: #1e3a8a;
+  box-shadow: 0 4px 12px -2px rgba(82, 56, 22, 0.12);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
